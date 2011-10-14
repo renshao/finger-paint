@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res/ren.shao"
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content"
+                android:padding="20px">
+                
+	<!-- Brush size text label -->        
+	<TextView android:id="@+id/txtBrush"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Brush Size" />
+		
+		
+	<ren.shao.view.BrushButton android:id="@+id/btn_thickness" 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		app:thickness="1"
+		app:brushId="circle_1"
+		/>
+	
+	<ren.shao.view.BrushButton android:id="@+id/btn_thickness_2" 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		app:thickness="2"
+		app:brushId="circle_2"
+		android:layout_toRightOf="@id/btn_thickness"/>
+		
+	<ren.shao.view.BrushButton android:id="@+id/btn_thickness_4" 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		app:thickness="4"
+		app:brushId="circle_4"
+		android:layout_toRightOf="@id/btn_thickness_2"/>
+		
+	<ren.shao.view.BrushButton android:id="@+id/btn_thickness_8" 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		app:thickness="8"
+		app:brushId="circle_8"
+		android:layout_toRightOf="@id/btn_thickness_4"/>
+		
+	<ren.shao.view.BrushButton android:id="@+id/btn_thickness_16" 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		app:thickness="16"
+		app:brushId="circle_16"
+		android:layout_toRightOf="@id/btn_thickness_8"/>
+		
+
+</RelativeLayout>

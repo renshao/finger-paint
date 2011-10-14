@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res/ren.shao"
+	android:id="@+id/mainView"
+	android:orientation="horizontal" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="wrap_content"
+		android:layout_height="fill_parent">
+		
+		<ImageButton android:id="@+id/btn_select_tool"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:adjustViewBounds="true"
+			android:scaleType="fitStart"
+			android:src="@drawable/pencil"
+			/>
+
+		<ren.shao.view.BrushButton android:id="@+id/btn_select_thickness"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			app:thickness="2" app:brushId="circle_2"
+			android:maxWidth="20px"/><!--
+
+		<ImageButton
+			android:id="@+id/btn_select_thickness"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/save"
+			android:maxWidth="20px" />
+			
+		
+		--><ImageButton android:id="@+id/btn_save"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/save" />
+	
+	</LinearLayout>
+	
+	
+	<ren.shao.CanvasView android:id="@+id/canvas"
+		android:layout_width="fill_parent" android:layout_height="fill_parent" />
+
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<declare-styleable name="ShapeButton">
+		<attr name="iconColor" format="color" />
+		
+		<attr name="iconStyle">
+			<enum name="fill" value="0"/>
+			<enum name="fill_and_stroke" value="1"/>
+			<enum name="stroke" value="2"/>
+		</attr>
+
+		<attr name="iconShape">
+			<enum name="rect" value="0"/>
+			<enum name="oval" value="1"/>
+			<enum name="circle" value="2"/>
+		</attr>
+	</declare-styleable>
+	  
+	<declare-styleable name="BrushButton">
+		<attr name="thickness" format="integer" />
+		<attr name="brushId" format="string" />
+	</declare-styleable>
+	
+</resources>
